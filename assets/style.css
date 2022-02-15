@@ -3,14 +3,13 @@ body {
 }
 
 .header-forgot {
-  background-color: black;
-}
-
-.header-forgot .header-content {
-  background-color: rgba(0, 0, 0, 5);
   background-image: url(./images/header-forgot.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-forgot .header-content {
+  background-color: rgba(0, 0, 0, 0.5);
   height: 758px;
   color: white;
 
@@ -18,7 +17,7 @@ body {
 
 .header-forgot .header-content .header-nav {
   margin: 0 89px;
-  margin-top: 74px;
+  padding-top: 74px;
 }
 
 .header-forgot .header-content .header-nav i {
@@ -46,10 +45,10 @@ body {
 .header-forgot .header-content form div input {
   height: 79px;
   width: 447px;
-  border-radius: 10px;
+  border: none;
   text-align: center;
   font-size: 24px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   color: white;
   margin-bottom: 31px;
 }
@@ -65,7 +64,11 @@ body {
 
 .header-forgot .header-content form div button.button-send {
   background-color: #ffcd61;
-
+  font-size: 24px;
+  height: 79px;
+  width: 447px;
+  border: none;
+  border-radius: 10px;
   font-weight: 900px;
 }
 
@@ -99,6 +102,7 @@ footer.footer .description {
 
 footer.footer .text {
   font-family: 'Mulish', sans-serif;
+  font-size: 18px;
 }
 
 footer.footer .link-social {
