@@ -1,16 +1,234 @@
+/* :root {
+  --primary: #03045E;
+  --secondary: #00B4D8;
+}
+
+.bg-login {
+  background-image: url('/assets/images/bg-login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .header-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+
+header .header-content input.user-auth {
+  width: 490px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .3);
+  margin-bottom: 34px;
+}
+
+header .header-content button.user-auth {
+  width: 490px;
+  height: 80px;
+  border-radius: 10px;
+  margin-top: 23px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+#google-login {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+#register {
+  margin-top: 0;
+} */
+
+header .header-content a {
+  font-family: 'Mulish', serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: white;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+header .header-content p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: rgba(57, 57, 57, 0.5);
+  margin-bottom: 53px;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
 }
 
-.header-home .logo {
-  margin-top: 83px;
-  margin-left: 123px;
-  margin-bottom: 45px;
+img.logo {
+  width: auto;
+  height: 42px;
 }
 
-/* Header */
+.socials {
+  border-top: 1px solid #C4C4C4;
+  text-align: center;
+}
+
+.socials .social-icons {
+  margin: 0 17.5px;
+  padding-top: 30px;
+}
+
+footer .footer p {
+  width: 355px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #848484;
+}
+
+footer div.footer {
+  margin-bottom: 60px;
+}
+
+nav .navbar-brand {
+  text-align: center;
+}
+
+.menu-navbar .nav-item {
+  margin: 0 10px;
+}
+
+.user-menu {
+  margin-left: 40px;
+}
+
+.user-menu .btn {
+  width: 132px;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background-color: var(--primary);
+}
+
+.btn-outline-primary {
+  border-radius: 8px;
+  outline: var(--primary);
+}
+
+.btn-secondary {
+  border-radius: 8px;
+  background-color: var(--secondary);
+}
+
+header.home-header {
+  background-image: url(/assets/images/bg-home-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+header.home-header .header-content {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 763px;
+  color: white;
+}
+
+header.home-header h1 {
+  padding-top: 64px;
+  padding-bottom: 74px;
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+}
+
+header.home-header h5 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+header.home-header .mode-light {
+  color: black;
+}
+
+header.home-header .mode-light hr {
+  width: 32px;
+  border: none;
+  height: 3px;
+  color: black;
+  background-color: black;
+  margin-bottom: 48px;
+}
+
+header.home-header .header-content input.divide-1 {
+  font-weight: 700;
+  height: 52px;
+  width: 470px;
+  background-color: rgba(255, 255, 255, .3);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 34px;
+}
 
 
+header.home-header .header-content input.divide-2 {
+  font-weight: 700;
+  height: 52px;
+  width: 220px;
+  background-color: rgba(255, 255, 255, .3);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+header.home-header .header-content button {
+  height: 52px;
+  width: 180px;
+}
+
+.main-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 50px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 55px;
+}
+
+.main-content .testimonial i {
+  margin-left: 8px;
+  margin-right: 8px;
+
+  color: #FFBB0C;
+}
+
+.main-content .testimonial .stars {
+  margin-bottom: 30px;
+}
+
+.main-content .testimonial p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  width: 450px;
+}
+
+.main-content .testimonial h5 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 48px;
+  margin-bottom: 0px;
+}
+
+.main-content .testimonial span {
+  font-size: 18px;
+  line-height: 48px;
+
+}
 
 /* Footer */
 footer.footer {
@@ -49,4 +267,10 @@ footer.footer .link-social i {
   font-size: 25px;
   margin-left: 17.5px;
   margin-right: 17.5px;
+}
+
+@media (max-width: 1000px) {
+  .main-content .testimonial p {
+    width: 100%;
+  }
 }
