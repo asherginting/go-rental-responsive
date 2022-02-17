@@ -1,179 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vehicle Rent - Home</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 5 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
-    integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"
-    integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Nunito:wght@400;700;900&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Nunito:wght@400;500;600;700;900&family=Playfair+Display:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <!-- custom css -->
-  <link rel="stylesheet" href="./assets/index.css">
+
+  <!-Boostrap CSS- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"
+      integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <title>Home | Vehicle Rent</title>
 </head>
 
 <body>
-  <div class="container px-5">
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="./assets/images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-          <ul class="navbar-nav menu-navbar">
-            <li class="nav-item">
-              <a class="nav-link active" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Vehicle Type</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <div class="form-inline my-2 my-lg-0 user-menu">
-            <a class="btn btn-outline-warning" href="/login">Login</a>
-            <a class="btn btn-warning" href="/register">Register</a>
-          </div>
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 w-100 py-lg-4">
+    <div class="container d-flex align-items-center">
+      <a class="navbar-brand" href="#">
+        <img class="w-75 w-lg-50" src="./assets/images/home/logo.png" alt="Logo-Vehicle-Rent" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Vehicle Type</a>
+          <a class="nav-link" href="#">History</a>
+          <a class="nav-link" href="#">About</a>
+        </div>
+        <div class="auth d-flex flex-column flex-lg-row">
+          <a class="btn rounded-3 btn-outline-warning mb-3 mb-lg-0" href="/login.html">
+            Login
+          </a>
+          <a class="btn rounded-3 btn-warning mb-3 mb-lg-0" href="/register.html">
+            Register
+          </a>
         </div>
       </div>
-    </nav>
-  </div>
-
-  <header class="home-header">
-    <div class="header-content mode-light">
-      <div class="container">
-        <h1>Explore and <br>Travel</h1>
-        <h5>Vehicle Finder</h5>
-        <hr>
-        <form>
-          <div style="width: 40%;">
-            <div class="row">
-              <input class="divide-2" type="text" placeholder="Location">
-              <input class="divide-2" type="text" placeholder="Payment">
-              <input class="divide-2" type="text" placeholder="Type">
-              <input class="divide-2" type="text" placeholder="Date">
-            </div>
-            <div class="row">
-              <button class="btn btn-warning">Explore</button>
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
-  </header>
+  </nav>
+  <!-- Navbar end -->
 
-  <div class="container main-content">
-    <div class="row popular">
+  <!-- Jumbotron start -->
+  <section class="jumbotron container-fluid pt-5">
+    <div class="hero-content container">
+      <h1>Explore and Travel</h1>
+      <p>Vehicle Finder</p>
+      <div class="aesthetic-line rounded"></div>
+      <form class="vehicle-finder-form mt-5" action="#">
+        <div class="row select-group">
+          <div class="my-2 col-6">
+            <select class="select-input form-select" aria-label="Default select example">
+              <option selected>Location</option>
+              <option value="1">Bali</option>
+              <option value="2">Yogyakarta</option>
+              <option value="3">Jakarta</option>
+              <option value="3">Kalimantan</option>
+              <option value="3">Malang</option>
+            </select>
+          </div>
+
+          <div class="my-2 col-6">
+            <select class="select-input form-select" aria-label="Default select example">
+              <option selected>Type</option>
+              <option value="1">Bike</option>
+              <option value="2">Cars</option>
+              <option value="3">Motorbike</option>
+            </select>
+          </div>
+          <div class="my-2 col-6">
+            <select class="select-input form-select" aria-label="Default select example">
+              <option selected>Payment</option>
+              <option value="1">Cash</option>
+              <option value="2">Paylater</option>
+            </select>
+          </div>
+          <div class="my-2 col-6">
+            <select class="select-input form-select" aria-label="Default select example">
+              <option selected>Date</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-warning mt-4 search-btn">Explore</button>
+      </form>
+    </div>
+  </section>
+  <!-- Jumbotron end -->
+
+  <!-- Popular In Town -->
+  <section class="popular container px-lg-4">
+    <div
+      class="head-section d-flex justify-content-center justify-content-md-start justify-content-lg-between w-100 mb-5 mb-lg-0 align-items-center">
       <h2>Popular in town</h2>
-      <div class="col-3">
-        <img src="/assets/images/image-main-content-merapi-yogyakarta.png" alt="Merapi - Yogyakarta">
+      <a href="#">View all <span><i class="icon fa-solid fa-chevron-right"></i></span></a>
+    </div>
+    <div class="popular-vehicles d-flex flex-column align-items-center flex-md-row row">
+      <div class="image-wrapper position-relative col">
+        <img src="./assets/images/home/bg-merapi-yogyakarta.png" alt="Merapi-Yogyakarta" />
+        <div class="image-desc position-absolute">
+          <h3 class="vehicle-name">Merapi</h3>
+          <p class="location">Yogyakarta</p>
+        </div>
       </div>
-      <div class="col-3">
-        <img src="/assets/images/image-main-content-teluk-bogam-kalimantan.png" alt="Teluk Bogam - Kalimantan">
+      <div class="image-wrapper position-relative col">
+        <img src="./assets/images/home/bg-teluk-bogam.png" alt="Teluk-Bogam" />
+        <div class="image-desc position-absolute">
+          <h3 class="vehicle-name">Teluk Bogam</h3>
+          <p class="location">Kalimantan</p>
+        </div>
       </div>
-      <div class="col-3">
-        <img src="/assets/images/image-main-content-bromo-malang.png" alt="Bromo - Malang">
+      <div class="image-wrapper position-relative col">
+        <img src="./assets/images/home/bg-bromo-malang.png" alt="Bromo-Malang" />
+        <div class="image-desc position-absolute">
+          <h3 class="vehicle-name">Bromo</h3>
+          <p class="location">Malang</p>
+        </div>
       </div>
-      <div class="col-3">
-        <img src="/assets/images/image-main-content-malioboro-yogyakarta.png" alt="Malioboro - Yogyakarta">
+      <div class="image-wrapper position-relative col">
+        <img src="./assets/images/home/bg-malioboro-yogyakarta.png" alt="Malioboro-Yogyakarta" />
+        <div class="image-desc position-absolute">
+          <h3 class="vehicle-name">Malioboro</h3>
+          <p class="location">Yogyakarta</p>
+        </div>
       </div>
     </div>
-    <div class="row testimonial align-items-center">
-      <h2>Testimonial</h2>
-      <div class="col-6">
-        <div class="stars">
-          <i class="fa-solid fa-star fa-xl"></i>
-          <i class="fa-solid fa-star fa-xl"></i>
-          <i class="fa-solid fa-star fa-xl"></i>
-          <i class="fa-solid fa-star fa-xl"></i>
-          <i class="fa-solid fa-star fa-xl"></i>
-        </div>
+  </section>
+  <!-- Popular In town end -->
 
-        <p>”It was the right decision to rent vehicle here, I spent less money and enjoy the trip. It was an amazing
-          experience to have a ride for wildlife trip!”</p>
+  <!-- Testimonials -->
+  <div class="row testimonial align-items-center">
+    <h2>Testimonial</h2>
+    <div class="col-6">
+      <div class="stars">
+        <i class="fa-solid fa-star fa-xl"></i>
+        <i class="fa-solid fa-star fa-xl"></i>
+        <i class="fa-solid fa-star fa-xl"></i>
+        <i class="fa-solid fa-star fa-xl"></i>
+        <i class="fa-solid fa-star fa-xl"></i>
+      </div>
 
-        <h5>Edward Newgate</h5>
-        <span>Founder Circle</span>
-      </div>
-      <div class="col-6 text-center">
-        <img src="/assets/images/image-main-content-testimonial-user.png" alt="Testimonial User">
-      </div>
+      <p>”It was the right decision to rent vehicle here, I spent less money and enjoy the trip. It was an amazing
+        experience to have a ride for wildlife trip!”</p>
+
+      <h5>Edward Newgate</h5>
+      <span>Founder Circle</span>
+    </div>
+    <div class="col-6 text-center">
+      <img src="/assets/images/home/bg-testimonial-user.png" alt="Testimonial-User">
     </div>
   </div>
+  </div>
+  <!-- Testimonials End -->
 
   <!-- Footer -->
-  <footer class="footer container">
-    <div class="row text">
-      <div class="col">
-        <div>
-          <img src="./assets/images/logo.png" alt="Logo-Vehicles">
-        </div>
-        <div class="description"> Plan and book your perfect trip with
-          expert advice, travel tips for vehicle
-          information from us</div>
-        <div class="copyright"> © 2022 - Vehicle Rental Center. All rights reserved</div>
+<footer class="footer container">
+  <div class="row text">
+    <div class="col">
+      <div>
+        <img src="./assets/images/home/logo.png" alt="Logo-Vehicle-Rent">
       </div>
-      <div class="col-md-2">
-        <h5> <b>Destinations</b> </h5>
-        <ul>
-          <li>Bali</li>
-          <li>Yogyakarta</li>
-          <li>Jakarta</li>
-          <li>Kalimantan</li>
-          <li>Malang</li>
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <h5> <b>Vehicle</b> </h5>
-        <ul>
-          <li>Bike</li>
-          <li>Cars</li>
-          <li>Motorbike</li>
-          <li>Return Times</li>
-          <li>FAQs</li>
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <h5> <b>Interests</b> </h5>
-        <ul>
-          <li>Adventure Travel</li>
-          <li>Art and Culture</li>
-          <li>Wildlife and Nature</li>
-          <li>Family Holidays</li>
-          <li>Culinary Trip</li>
-        </ul>
-      </div>
+      <div class="description"> Plan and book your perfect trip with
+        expert advice, travel tips for vehicle
+        information from us</div>
+      <div class="copyright"> © 2022 - Vehicle Rental Center. All rights reserved</div>
     </div>
-    <div class="link-social">
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
-      <i class="fa-brands fa-youtube"></i>
+    <div class="col-md-2">
+      <h5> <b>Destinations</b> </h5>
+      <ul>
+        <li>Bali</li>
+        <li>Yogyakarta</li>
+        <li>Jakarta</li>
+        <li>Kalimantan</li>
+        <li>Malang</li>
+      </ul>
     </div>
-  </footer>
-
+    <div class="col-md-2">
+      <h5> <b>Vehicle</b> </h5>
+      <ul>
+        <li>Bike</li>
+        <li>Cars</li>
+        <li>Motorbike</li>
+        <li>Return Times</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <h5> <b>Interests</b> </h5>
+      <ul>
+        <li>Adventure Travel</li>
+        <li>Art and Culture</li>
+        <li>Wildlife and Nature</li>
+        <li>Family Holidays</li>
+        <li>Culinary Trip</li>
+      </ul>
+    </div>
+  </div>
+  <div class="link-social">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</footer>
 </body>
-
 </html>
