@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 150px;
+}
+
+nav .navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .mail-profile img {
+  width: 54.62px;
+}
+
+.message {
+  text-decoration: none;
+}
+
+.total-message {
+  position: relative;
+  top: -18px;
+  margin-right: -18px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.profile img {
+  border-radius: 30px;
+}
+
+/* button */
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-green,
+.btn-black {
+  text-align: center;
+  width: 90%;
+  padding: 25px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-green {
+  color: #fff;
+  background-color: #32DBC6;
+}
+
+.btn-black {
+  background-color: black;
+  color: #32DBC6;
+}
+
+.btn-green:hover,
+.btn-black:hover {
+  background-color: #EBEFD0;
+  color: #085F63;
+}
+
+/* section */
+section {
+  margin-top: 40px;
+}
+
+.first-section {
+  margin-top: 150px;
+}
+
+.back {
+  text-decoration: none;
+  color: black;
+}
+
+.back:hover {
+  color: #49BEB7;
+}
+
+.back i,
+.head span {
+  font-weight: bold;
+}
+
+.head span {
+  font-size: 28px;
+}
+
+.back i {
+  font-size: 35px;
+}
+
+/* .img-section, .description-section {
+  height: 409px;
+} */
+section img,
+.cover-image {
+  border-radius: 10px;
+}
+
+.description-section {
+  padding-left: 100px;
+}
+
+.description {
+  font-family: 'Playfair Display', Helvetica, sans-serif;
+}
+
+.description h2 {
+  font-size: 45px;
+}
+
+.description p {
+  font-size: 30px;
+}
+
+.price {
+  font-family: 'Playfair Display', Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.prev,
+.next,
+.plus,
+.minus {
+  font-size: 40px;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.total-day {
+  margin-top: 20%;
+}
+
+.plus,
+.minus {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.plus {
+  background-color: #49BEB7;
+  color: #fff;
+}
+
+.count {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.minus {
+  background-color: #EBEFD0;
+}
+
+/* custom */
+.carousel-inner {
+  position: relative;
+  width: 71%;
+  overflow: hidden;
+  margin: 100px;
+}
+
+.carousel-item {
+  width: 50% !important;
+}
+
+/* reservation */
+.reservation .img-section {
+  border-radius: 10px;
+}
+
+.reservation .img-section img {
+  width: auto;
+  height: 100%;
+}
+
+.reservation .total-day {
+  margin-top: 20px;
+}
+
+.reservation button {
+  padding: 0;
+}
+
+.reservation .description-section {
+  padding-left: 0;
+  padding: 0 20px;
+}
+
+.reservation form {
+  margin: 0 5px;
+}
+
+.reservation input,
+.reservation select {
+  padding: 20px 0;
+  background-color: rgba(159, 163, 161, 0.1);
+  border: none;
+}
+
+.reservation input.form-control,
+.reservation select.form-select {
+  padding-left: 20px;
+  border-radius: 10px;
+  color: gray;
+}
+
+.reservation input::placeholder {
+  color: gray;
+}
+
+.reservation input.form-control:focus,
+.reservation select.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 253, 161, 0.25);
+}
+
+.pay-now .btn-green {
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+/* payment */
+.payment .img-section {
+  position: relative;
+  border-radius: 10px;
+}
+
+.payment .img-section img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
+
+.payment .code {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Playfair Display', Times, serif;
+}
+
+.payment .description-section {
+  padding-left: 0;
+}
+
+
+@media all and (max-width: 1399px) {
+  .payment .description-section {
+    padding-left: 45px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .reservation .img-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  #navbarNav {
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .img-section {
+    text-align: center;
+  }
+
+  .description-section {
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  .total-day {
+    margin-top: 10%;
+  }
+
+  .description-section {
+    width: 95%;
+  }
+
+  .reservation .description-section {
+    width: 100%;
+  }
+
+  /* payment */
+  .payment .description-section {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .payment .img-section {
+    text-align: unset;
+  }
+
+  .payment .copy-contain {
+    width: auto !important;
+  }
+
+  .payment .description h2 {
+    font-size: 32px;
+  }
+
+  .payment .description p,
+  .payment .code,
+  .payment .copy-contain .btn,
+  .pay-now .btn {
+    font-size: 19px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .carousel {
+    margin-bottom: 45px;
+  }
+
+  .total-day {
+    margin: auto;
+    padding-left: 0;
+    width: 70%;
+  }
+
+  section {
+    margin-top: 50px;
+  }
+
+  .total-day {
+    margin-top: 5%;
+  }
+
+  .btn-green,
+  .btn-black {
+    padding: 15px 0;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  /* payment */
+  .payment .img-section,
+  .payment .img-section img {
+    position: unset;
+  }
+
+  .payment .img-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .payment .description h2 {
+    font-size: 20px;
+  }
+
+  .payment .description p,
+  .payment .code,
+  .payment .copy-contain .btn,
+  .pay-now .btn {
+    font-size: 10px;
+  }
+
+  .payment .description p,
+  .payment .status,
+  .payment .code-container,
+  .payment .copy-contain {
+    margin: 0 !important;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .img-section {
+    height: 100%;
+  }
+
+  .img-section img {
+    width: 80%;
+  }
+
+  .description-section {
+    margin: 10px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .payment .description-section {
+    margin: 0;
+    padding-left: 10px;
+  }
+}
