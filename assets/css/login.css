@@ -1,175 +1,227 @@
-* {
-  font-size: 14px;
+/* Header Login */
+body {
+  font-family: 'Nunito', sans-serif;
 }
 
-#side-image {
-  display: none;
+header.login {
+  background-image: url(/assets/images/login/header-login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 
-h1 {
+header .opacity {
+  height: 805px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .desc {
+  border-right: 1px solid white;
+  margin-top: 107px;
+}
+
+header .form-login {
+  margin-top: 107px;
+}
+
+header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3em;
-}
-
-.main,
-footer {
-  padding-inline: 3em;
-}
-
-form.login-form>input,
-form.login-form>button,
-.other-way>button,
-.sign-up {
-  padding: 1em 1.2em;
-  border-radius: 10px;
-  font-family: Nunito, sans-serif;
-}
-
-form.login-form>input {
-  background: rgba(218, 218, 218, 0.28);
-  border: 0.5px solid rgba(78, 78, 78, 0.5);
-  color: rgba(57, 57, 57, 0.5);
-}
-
-button,
-.sign-up {
-  border: none;
-  font-weight: 900;
-}
-
-button.login {
-  background: #FFCD61;
-  box-shadow: 0px 0px 20px rgba(248, 161, 112, 0.47)
-}
-
-button.google-login {
-  background: #FFFFFF;
-  box-shadow: 0px 0px 20px rgba(78, 78, 78, 0.4);
-}
-
-.sign-up {
-  background: #393939;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-  color: #FFCD61;
-}
-
-img.google-icon {
-  width: 2.1em;
-}
-
-a.forgot {
-  color: #393939;
-  font-family: Mulish, sans-serif;
   font-weight: bold;
+  font-size: 64px;
+  line-height: 85px;
+  margin-bottom: 93px;
 }
 
-.separator>p {
-  color: rgba(57, 57, 57, 0.5);
-  font-family: Nunito, sans-serif;
+header .opacity .text {
   font-weight: bold;
+  font-size: 24px;
   line-height: 33px;
+  text-decoration: none;
+  color: #fff;
 }
 
-.separator>hr {
-  width: 20%;
-  border: 1px solid #4E4E4E;
-  margin-top: -1px
+header .btn-signup {
+  margin-top: 25px;
+  padding: 23px 149px;
+  background-color: #151b1b;
+  color: #0085DF;
+  font-weight: 900;
+  font-size: 24px;
+  border-radius: 10px;
 }
 
-footer {
-  background: #F9F9FB;
-  margin-top: 2em;
-  padding-top: 3em;
+header .btn-signup:hover {
+  background-color: #0085DF;
+  color: #ffffff;
 }
 
-footer>img {
-  width: 2em;
+header .btn-login {
+  margin-top: 25px;
+  padding: 23px 149px;
+  background-color: #0085DF;
+  color: #0085DF;
+  font-weight: 900;
+  font-size: 24px;
+  border-radius: 10px;
 }
 
-footer>p {
-  font-family: Mulish, sans-serif;
-  color: #848484;
+header .btn-login:hover {
+  background-color: #151b1b;
+  color: #0085DF;
 }
 
-footer>p.copy-writing {
-  width: 70%;
+.form-login {
+  margin-left: 20%;
 }
 
-footer>p.since {
-  margin-top: 5em;
-
+.form-login input,
+.form-login .btn {
+  width: 447px;
+  padding: 23px 0;
+  border-radius: 10px;
+  margin: 17px 0;
+  font-weight: 900;
+  font-size: 24px;
 }
 
-footer>hr {
-  width: 70%;
-  border: 1px solid #C4C4C4;
+.form-login input {
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.26);
+  color: #fff;
+  border: none;
 }
 
-.icons>i {
-  font-size: 1.2em;
-  margin-inline: 0.5em;
-  color: #393939;
+.form-login input:focus {
+  outline: none;
 }
 
-@media (min-width: 768px) {
+.form-login input::placeholder {
+  color: #fff;
+}
 
-  .main,
-  footer {
-    padding-inline: 10em;
+.form-login a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 49px;
+}
+
+.form-login a.forgot {
+  display: block;
+  margin-bottom: 49px;
+}
+
+.form-login .login {
+  color: #fff;
+  background-color: #32DBC6;
+}
+
+.form-login .login:hover {
+  background-color: #EBEFD0;
+  color: #085F63;
+}
+
+.form-login .google {
+  color: black;
+  background-color: #fff;
+  text-align: center;
+}
+
+.form-login .google:hover {
+  background-color: #EBEFD0;
+  color: #085F63;
+}
+
+.ellipse {
+  text-align: end;
+}
+
+.ellipse.top {
+  margin-right: -22px;
+  margin-top: -3px;
+}
+
+.ellipse.bottom {
+  margin-right: -23px;
+  margin-top: 125px;
+}
+
+.ellipse.bottom.signup {
+  margin-top: 135px;
+}
+
+@media all and (max-width: 1150px) {
+  .form-login {
+    margin-left: 15%;
   }
 }
 
-@media (min-width: 992px) {
-  * {
-    font-size: 16px;
+@media all and (max-width: 990px) {
+  header h1 {
+    margin-bottom: 15px;
+    font-size: 43px;
   }
 
-  #side-image {
-    background-image: url("../images/login/bg-login.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    width: 100%;
+  .form-login input,
+  .form-login .btn {
+    width: 320px;
+    padding: 12px 0;
   }
 
-  main {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .form-login input {
+    padding-left: 10px;
   }
 
-  form.login-form {
-    margin-top: 4.5em;
+  header .opacity .text {
+    font-size: 15px;
   }
 
-  form.login-form>input {
-    margin-bottom: 1.5em !important;
-    padding-left: 2em;
+  header .opacity .btn {
+    width: 320px;
+    padding: 15px 0;
   }
 
-  .main {
-    padding-inline: 4em;
+  .ellipse.bottom {
+    margin-top: 138px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header .opacity {
+    height: 900px;
   }
 
-  footer {
-    margin-top: 2.3em;
-    padding-inline: 3em;
-    padding-top: 5em;
+  header .opacity .row {
+    text-align: center;
   }
 
-  footer>p.copy-writing {
-    width: 45%;
+  header .desc {
+    border: none;
+    margin-top: 20px;
   }
 
-  footer>p.since {
-    margin-block: 3.2em !important;
+  .ellipse {
+    display: none;
   }
 
-  footer>hr.line-separator {
-    margin-bottom: 2em !important;
+  header .form-login {
+    margin-top: 10px;
+    margin-left: 0;
   }
 
-  footer>.icons {
-    margin-bottom: 2em !important;
+  .form-login {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-login input,
+  .form-login input:focus {
+    text-align: center;
+  }
+
+  .form-login a.forgot {
+    display: inline;
   }
 }

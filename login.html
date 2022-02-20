@@ -1,4 +1,3 @@
-<!-- External Internal -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,75 +6,113 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/images/home/logo.png" type="image/x-icon">
-  <title>Login Vehicle Rent </title>
+  <!-- Navicon -->
+  <link rel="shortcut icon" href="./assets/images/login/favicon-gorental.png" type="image/x-icon">
+  <title>Login GO Rental</title>
 
-  <!-- Boostrap -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
-    integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"
-    integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Font Google -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&family=Nunito:wght@400;700;900&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Style -->
-  <link rel="stylesheet" href="./assets/css/login.css">
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="/assets/css/login.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 
 <body>
-  <main>
-    <div id="side-image" class=""></div>
-    <section class="login-section">
-      <div class="main">
-        <h1 class="text-center text-lg-start mt-5 mb-5">Login</h1>
-        <form action="#" class="login-form d-flex flex-column mb-3">
-          <input class="mb-3" type="email" placeholder="Email" />
-          <input class="mb-3" type="password" placeholder="Password" />
-          <button class="login mt-4">Login</button>
-        </form>
-        <a class="forgot" href="/forgot-pass.html">Forgot password?</a>
-        <div class="separator my-4 d-flex justify-content-center align-items-center">
-          <hr class="line-separator rounded" />
-          <p class="text-center mx-3">or try another way</p>
-          <hr class="line-separator rounded" />
-        </div>
-        <div class="other-way d-flex flex-column">
-          <button class="mb-4 google-login">
-            <i class="fa-brands fa-google"></i>
-            Login with Google
-          </button>
-          <a href="./signup.html" class="btn sign-up">Sign Up</a>
+  <!-- Header -->
+  <header class="login mb-5">
+    <div class="opacity">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 desc">
+            <div class="ellipse top"><img src="./assets/images/login/ellipse.png" alt="ellipse"></div>
+            <h1>Let's Explore <br> The World</h1>
+            <div class="text">Don't have account?</div>
+            <a href="/signup.html" class="btn btn-signup">Sign Up</a>
+            <div class="ellipse bottom"><img src="./assets/images/login/ellipse.png" alt="ellipse"></div>
+          </div>
+          <div class="col-md-6 form">
+            <form class="form-login row">
+              <input type="email" placeholder="Email"> <br>
+              <input type="password" placeholder="Password"> <br>
+              <div><a href="/forgot-pass.html" class="forgot">Forgot password?</a> <br></div>
+              <a href="/login.html" class="btn btn-login">Login</a> <br>
+              <a href="#" class="btn google"><img src="./assets/images/login/google.png" alt="google"> Login With Google</a>
+            </form>
+          </div>
         </div>
       </div>
-      <footer>
-        <img class="vehicle-rent-logo" src="./assets/images/home/logo.png" alt="vehicle-rent-logo" />
-        <p class="copy-writing mt-4">
-          Plan and book your perfect trip with expert advice, travel tips for
-          vehicle information from us
-        </p>
-        <p class="since mb-4">
-          © 2022 - Vehicle Rental Center. All rights reserved
-        </p>
-        <hr class="line-separator rounded mx-auto mb-4" />
-        <div class="icons d-flex my-4 justify-content-center">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-youtube"></i>
+    </div>
+  </header>
+  <!-- /Header -->
+  
+  <!-- Footer -->
+  <footer class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="./assets/images/login/Go-Rental x100.png" alt="logo">
+        <p class="description">Plan and book your perfect trip with expert advice, travel tips for vehicle information
+          from us</p>
+        <p> © 2022 - GO Rental. All rights reserved</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="my-5 col-12 col-md-4">
+            <h5>Destinations</h5>
+            <ul class="list-group">
+              <li>Bali</li>
+              <li>Yogyakarta</li>
+              <li>Jakarta</li>
+              <li>Kalimantan</li>
+              <li>Malang</li>
+            </ul>
+          </div>
+          <div class="my-5 col-12 col-md-4">
+            <h5>Vehicle</h5>
+            <ul class="list-group">
+              <li>Bike</li>
+              <li>Cars</li>
+              <li>Motorbike</li>
+              <li>Return Times</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div class="my-5 col-12 col-md-4">
+            <h5>Interests</h5>
+            <ul class="list-group">
+              <li>Adventure Travel</li>
+              <li>Art And Culture</li>
+              <li>wildlife And Nature</li>
+              <li>Family Holidays</li>
+              <li>Culinary Trip</li>
+            </ul>
+          </div>
         </div>
-      </footer>
-    </section>
-  </main>
+      </div>
+    </div>
+    <div class="row social">
+      <ul class="list-group">
+        <li> <a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a> </li>
+        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
 </body>
 
 </html>
