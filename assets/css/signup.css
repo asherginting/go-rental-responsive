@@ -1,176 +1,107 @@
-* {
-  font-size: 14px;
+.img-section,
+.form-section {
+  padding: 0;
+  margin: 0;
 }
 
-#side-image {
-  display: none;
+.img-section {
+  background-image: url(/assets/images/signup/header-signup.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3em;
+.form-section {
+  background-color: #fff;
 }
 
-.main,
-footer {
-  padding-inline: 3em;
+form h2.header-sign {
+  width: 90%;
 }
 
-form.login-form>input,
-form.login-form>button,
-.other-way>button,
-.login-btn {
-  padding: 1em 1.2em;
+input,
+.btn,
+.another {
+  width: 86%;
+  height: 79px;
   border-radius: 10px;
-  font-family: Nunito, sans-serif;
+  line-height: 2.5;
+  margin: 17px 0;
+  font-size: 22px;
 }
 
-form.login-form>input {
-  background: rgba(218, 218, 218, 0.28);
-  border: 0.5px solid rgba(78, 78, 78, 0.5);
-  color: rgba(57, 57, 57, 0.5);
+h2 {
+  font-family: 'Playfair Display', Courier, monospace;
+  font-weight: bold;
+  font-size: 48px;
 }
 
-button,
-.login-btn {
+input {
+  padding-left: 30px;
+  background: rgba(78, 78, 78, 0.1);
   border: none;
-  font-weight: 900;
 }
 
-button.login {
-  background: #FFCD61;
-  box-shadow: 0px 0px 20px rgba(248, 161, 112, 0.47)
+input:focus {
+  padding-left: 30px;
+  outline: #32DBC6;
 }
 
-button.google-login {
-  background: #FFFFFF;
-  box-shadow: 0px 0px 20px rgba(78, 78, 78, 0.4);
+.signup {
+  color: #ffffff;
+  background-color: #0085DF;
 }
 
-.login-btn {
-  background: #393939;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-  color: #FFCD61;
+.another hr {
+  height: 2px;
 }
 
-img.google-icon {
-  width: 2.1em;
+.text-another {
+  font-size: 20px;
 }
 
-a.forgot {
-  color: #393939;
-  font-family: Mulish, sans-serif;
-  font-weight: bold;
+.signup:hover,
+.login:hover,
+.google:hover {
+  box-shadow: -3px -4px 26px -5px rgba(50, 219, 198, 0.53);
+  -webkit-box-shadow: -3px -4px 26px -5px rgba(50, 219, 198, 0.53);
+  -moz-box-shadow: -3px -4px 26px -5px rgba(50, 219, 198, 0.53);
 }
 
-.separator>p {
-  color: rgba(57, 57, 57, 0.5);
-  font-family: Nunito, sans-serif;
-  font-weight: bold;
-  line-height: 33px;
+.google,
+.login,
+.signup {
+  box-shadow: -3px -4px 26px -5px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: -3px -4px 26px -5px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: -3px -4px 26px -5px rgba(0, 0, 0, 0.53);
 }
 
-.separator>hr {
-  width: 20%;
-  border: 1px solid #4E4E4E;
-  margin-top: -1px
+.google:hover,
+.login:hover,
+.signup:hover {
+  background-color: #0085DF;
+  color: #151b1b;
 }
 
-footer {
-  background: #F9F9FB;
-  margin-top: 2em;
-  padding-top: 3em;
+.login {
+  background-color: #151b1b;
+  color: #0085DF;
 }
 
-footer>img {
-  width: 2em;
-}
-
-footer>p {
-  font-family: Mulish, sans-serif;
-  color: #848484;
-}
-
-footer>p.copy-writing {
-  width: 70%;
-}
-
-footer>p.since {
-  margin-top: 5em;
-
-}
-
-footer>hr {
-  width: 70%;
-  border: 1px solid #C4C4C4;
-}
-
-.icons>i {
-  font-size: 1.2em;
-  margin-inline: 0.5em;
-  color: #393939;
-}
-
-@media (min-width: 768px) {
-
-  .main,
-  footer {
-    padding-inline: 10em;
-  }
-}
-
-@media (min-width: 992px) {
-  * {
-    font-size: 16px;
+@media (max-width: 991px) {
+  form .header-sign {
+    margin: 20px 0 !important;
   }
 
-  #side-image {
-    background-image: url("../images/signup/bg-signup.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    width: 100%;
+  .text-another {
+    font-size: 15px;
   }
 
-  main {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  input,
+  .btn,
+  .another {
+    height: 55px;
+    line-height: 2;
+    margin: 17px 0;
+    font-size: 20px;
   }
-
-  form.login-form {
-    margin-top: 4.5em;
-  }
-
-  form.login-form>input {
-    margin-bottom: 1.5em !important;
-    padding-left: 2em;
-  }
-
-  .main {
-    padding-inline: 4em;
-  }
-
-  footer {
-    margin-top: 2.3em;
-    padding-inline: 3em;
-    padding-top: 5em;
-  }
-
-  footer>p.copy-writing {
-    width: 45%;
-  }
-
-  footer>p.since {
-    margin-block: 3.2em !important;
-  }
-
-  footer>hr.line-separator {
-    margin-bottom: 2em !important;
-  }
-
-  footer>.icons {
-    margin-bottom: 2em !important;
-  }
-
 }
