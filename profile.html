@@ -6,35 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/images/home/logo.png" type="image/x-icon">
-  
+  <!-- Navicon -->
+  <link rel="shortcut icon" href="./assets/images/login/favicon-gorental.png" type="image/x-icon">
   <title>Profile</title>
-  <!-- bootstrap -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&family=Nunito:wght@400;700;900&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Boostrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
     integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"
     integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/profile.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="/assets/css/profile.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
-
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container bg-white navigation">
       <a href="index.html" class="navbar-brand">
-        <img src="./assets/images/home/logo.png" alt="Logo">
+        <img src="./assets/images/home/Go-Rental x100.png" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -45,19 +50,18 @@
             <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item mx-xl-3">
-            <a class="nav-link" href="#">Vehicle Type</a>
+            <a class="nav-link" href="/vehicle-type">Vehicle Type</a>
           </li>
           <li class="nav-item me-xl-3">
-            <a class="nav-link" href="#">History</a>
+            <a class="nav-link" href="/history">History</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
         </ul>
         <div class="mail-profile ms-xl-5">
-          <a href="#" class="me-4 message"><span class="text-white bg-danger badge total-message">1</span><img
-              src="/assets/images/profile/email.png" alt="message"></a>
-          <a href="#" class="profile"><img src="/assets/images/profile/profile.png" alt="Profile-Picture"></a>
+          <a href="#" class="me-4 message"><span class="text-white bg-danger badge total-message">1</span><img src="/assets/images/profile/email.png" alt="message"></a>
+          <a href="#" class="profile"><img src="/assets/images/profile/profile.png" alt="picture-profile"></a>
         </div>
       </div>
     </div>
@@ -68,7 +72,7 @@
     <div class="profle-header">
       <div class="text-center">
         <div class="image-profile">
-          <img src="/assets/images/profile/profile.png" alt="Profile-Picture">
+          <img src="/assets/images/profile/profile.png" alt="profile-photo">
           <button class="btn-pen badge"><i class="fa-solid fa-pen"></i></button>
         </div>
         <h2 class="mt-5">Samantha Doe</h2>
@@ -79,39 +83,39 @@
       </div>
     </div>
   </header>
-
+  
   <section class="container">
     <form>
-      <div class="gender">
+      <div class="gender mb-5">
         <input type="radio" class="form-check-input" id="male" name="gender">
         <label for="male" class="me-5 text-muted">Male</label>
-        <input type="radio" class="form-check-input ms-5" id="female" name="gender">
-        <label for="female" class="text-muted">Female</label>
+        <input type="radio" class="form-check-input ms-5" id="female" name="gender" checked>
+        <label for="female">Female</label>
       </div>
       <h4>Contact</h4>
-      <div class="row-cols-12">
+      <div class="row-cols-12 contact">
         <div class="col mt-4">
           <label>Email Adress:</label>
-          <input class="form-control form-contact" type="email" placeholder="Email">
+          <input class="form-control form-contact" type="email" value="zulaikha17@gmail.com">
         </div>
         <div class="col mt-4">
           <label>Adress:</label>
-          <textarea class="form-control form-contact" placeholder="Your Adress"></textarea>
+          <textarea class="form-control form-contact">Iskandar Street no. 67 Block A Near Bus Stop</textarea>
         </div>
-        <div class="col mt-4">
+        <div class="col mt-4"> 
           <label>Mobile number:</label>
-          <input class="form-control form-contact" type="number" placeholder="Your mobile Number">
+          <input class="form-control form-contact" type="text" value="(+62)813456782">
         </div>
       </div>
       <h4 class="mt-5">Identity</h4>
-      <div class="row mt-4">
-        <div class="col-6">
+      <div class="row mt-4 identity">
+        <div class="col-6 pe-lg-5">
           <label>Display name:</label> <br>
-          <input class="form-control form-contact" type="text" placeholder="User name">
+          <input class="form-control form-contact" type="text" value="zulaikha">
         </div>
-        <div class="col-6">
+        <div class="col-6 ps-lg-5">
           <label>DD/MM/YY</label> <br>
-          <input class="form-control form-contact" type="text" placeholder="Birthdate">
+          <input class="form-control form-contact" type="text" value="03/09/2003">
         </div>
       </div>
       <div class="row btn-group d-flex flex-row justify-content-between">
@@ -128,57 +132,59 @@
     </form>
   </section>
 
-  <!-- Footer -->
-<footer class="footer container">
-  <div class="row text">
-    <div class="col">
-      <div>
-        <img src="./assets/images/home/logo.png" alt="Logo-Vehicle-Rent">
+  <footer class="bg-light pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="./assets/images/login/Go-Rental x100.png" alt="logo">
+          <p class="description">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
+          <p>© 2022 GO Rental. All rights reserved</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="my-5 col-12 col-md-4">
+              <h5>Destinations</h5>
+              <ul class="list-group">
+                <li>Bali</li>
+                <li>Yogyakarta</li>
+                <li>Jakarta</li>
+                <li>Kalimantan</li>
+                <li>Malang</li>
+              </ul>
+            </div>
+            <div class="my-5 col-12 col-md-4">
+              <h5>Vehicle</h5>
+              <ul class="list-group">
+                <li>Bike</li>
+                <li>Cars</li>
+                <li>Motorbike</li>
+                <li>Return Times</li>
+                <li>FAQs</li>
+              </ul>
+            </div>
+            <div class="my-5 col-12 col-md-4">
+              <h5>Interests</h5>
+              <ul class="list-group">
+                <li>Adventure Travel</li>
+                <li>Art And Culture</li>
+                <li>wildlife And Nature</li>
+                <li>Family Holidays</li>
+                <li>Culinary Trip</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="description"> Plan and book your perfect trip with
-        expert advice, travel tips for vehicle
-        information from us</div>
-      <div class="copyright"> © 2022 - Vehicle Rental Center. All rights reserved</div>
+      <div class="row social">
+        <ul class="list-group">
+          <li> <a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a> </li>
+          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+      </div>  
     </div>
-    <div class="col-md-2">
-      <h5> <b>Destinations</b> </h5>
-      <ul>
-        <li>Bali</li>
-        <li>Yogyakarta</li>
-        <li>Jakarta</li>
-        <li>Kalimantan</li>
-        <li>Malang</li>
-      </ul>
-    </div>
-    <div class="col-md-2">
-      <h5> <b>Vehicle</b> </h5>
-      <ul>
-        <li>Bike</li>
-        <li>Cars</li>
-        <li>Motorbike</li>
-        <li>Return Times</li>
-        <li>FAQs</li>
-      </ul>
-    </div>
-    <div class="col-md-2">
-      <h5> <b>Interests</b> </h5>
-      <ul>
-        <li>Adventure Travel</li>
-        <li>Art and Culture</li>
-        <li>Wildlife and Nature</li>
-        <li>Family Holidays</li>
-        <li>Culinary Trip</li>
-      </ul>
-    </div>
-  </div>
-  <div class="link-social">
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-facebook-f"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-linkedin-in"></i>
-    <i class="fa-brands fa-youtube"></i>
-  </div>
-</footer>
+  </footer>
 </body>
-
 </html>
