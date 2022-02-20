@@ -1,0 +1,241 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 150px;
+}
+
+nav .navigation {
+  padding: 0 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav.navbar .navigation .navbar-brand {
+  width: 41px;
+  margin-left: 70px;
+}
+
+nav.navbar .navigation ul li a {
+  color: #393939;
+  margin: 17.5px;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav.navbar .navigation ul li .btn-nav {
+  border-radius: 8px;
+  width: 132px;
+}
+
+nav.navbar .navigation ul li .btn-login {
+  border: 1px solid #0085DF;
+}
+
+nav.navbar .navigation ul li .btn-login:hover {
+  background-color: #0085DF;
+}
+
+.btn-warning {
+  background-color: #0085DF !important;
+  border: 1px solid #32DBC6;
+}
+
+.btn-warning:hover {
+  background-color: #ffffff !important;
+  border: 1px solid #0085DF;
+}
+
+
+header.header-homepage {
+  margin-top: 150px;
+  background-image: url(/assets/images/home/header-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+header .opacity {
+  padding-top: 69px;
+  height: 805px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .opacity h1 {
+  margin-bottom: 71px;
+  font-weight: bold;
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+}
+
+header .opacity p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+header .opacity .line {
+  border-top: 3px solid #fff;
+  width: 32px;
+}
+
+header .option-form {
+  width: 220px;
+  height: 52px;
+  margin: 35px 0;
+  margin-right: 31px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header .option-form:focus {
+  outline: none;
+}
+
+header .opacity .btn {
+  border-radius: 8px;
+  width: 180px;
+  height: 52px;
+  margin-top: 51px;
+  margin-bottom: 119px;
+}
+
+/* section */
+section h2 {
+  margin-top: 82px;
+  margin-bottom: 56px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+}
+
+main section img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+main section a {
+  text-decoration: none;
+}
+
+main section .highlight {
+  margin-top: -67px;
+  position: relative;
+  background-color: #ffff;
+  width: 120px;
+  height: 56px;
+  border-radius: 0px 6px 0px 0px;
+  font-family: 'Nunito', sans-serif;
+  color: #042521;
+}
+
+main section .highlight h5 {
+  color: #042521;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+main section .highlight span {
+  font-size: 17px;
+  color: #686767;
+}
+
+section.testimoni .left-testi {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.testimoni .comment i {
+  color: #FFBB0C;
+  margin-right: 15px;
+}
+
+section.testimoni .comment p {
+  margin-top: 31px;
+  margin-bottom: 40px;
+  width: 450px;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: 'Mulish', sans-serif;
+}
+
+section.testimoni .profile h5 {
+  font-weight: bold;
+}
+
+section.testimoni .profile .image {
+  margin: 0 auto;
+  width: 396px;
+}
+
+section.testimoni .profile img {
+  border-radius: 10px;
+  width: 396px;
+}
+
+section.testimoni .profile .next-prev {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: -53px;
+  width: 132px;
+  height: 60px;
+  border-radius: 16px 0px 0px 0px;
+}
+
+section.testimoni .profile .next-prev .btn {
+  border: 2px solid black;
+  width: 40px;
+  border-radius: 60px;
+  margin: 0 5px;
+}
+
+
+@media all and (max-width: 650px) {
+  header .container {
+    text-align: center;
+  }
+
+  header .line {
+    margin: 0 auto;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  nav .navigation {
+    padding: 10px;
+  }
+
+  header.header-homepage {
+    margin-top: 100px;
+  }
+
+  header .option-form {
+    height: 40px;
+    margin: 13px 0;
+    margin-right: 0;
+  }
+
+  header .opacity .btn {
+    height: 40px;
+  }
+
+  section.testimoni h2 {
+    font-size: 23px;
+  }
+
+  section.testimoni .comment p {
+    font-size: 18px;
+  }
+
+  section.testimoni .comment p,
+  section.testimoni .profile .image,
+  section.testimoni .profile img {
+    width: 100%;
+  }
+}
