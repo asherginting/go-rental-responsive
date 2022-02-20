@@ -5,25 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment</title>
-  <!-- bootstrap -->
+
+  <!-- Navicon -->
+  <link rel="shortcut icon" href="./assets/images/login/favicon-gorental.png" type="image/x-icon">
+  <title>Payment Fixie Gray </title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&family=Nunito:wght@400;700;900&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Boostrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
     integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"
     integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish&family=Nunito:wght@400;700;900&family=Playfair+Display:wght@400;700;900&display=swap"
-    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/more-detail2.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="/assets/css/md-fixie-gray.css">
   <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 
@@ -31,7 +39,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container bg-white navigation">
       <a href="index.html" class="navbar-brand">
-        <img src="./assets/images/home/logo.png" alt="Logo">
+        <img src="./assets/images/home/Go-Rental x100.png" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -45,10 +53,10 @@
             <a class="nav-link active" href="vehicle-type.html">Vehicle Type</a>
           </li>
           <li class="nav-item me-xl-3">
-            <a class="nav-link" href="#">History</a>
+            <a class="nav-link" href="/history.html">History</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="/about.html">About</a>
           </li>
         </ul>
         <div class="mail-profile ms-xl-5">
@@ -62,14 +70,14 @@
 
   <section class="container first-section payment">
     <div class="d-flex flex-row head">
-      <a href="/more-detail-2.html" class="back d-flex mb-5">
+      <a href="/md-fixie-gray.html" class="back d-flex mb-5">
         <i class="fa-solid fa-angle-left me-5"></i>
       </a>
       <span>Payment</span>
     </div>
     <div class="row pt-5 detail-vehicle">
       <div class="col-6 col-sm-5 col-md-5 col-xl-4 img-section overflow-hidden">
-        <img src="/assets/images/more-detail/fixie.png" alt="fixie">
+        <img src="/assets/images/vehicle-type/fixie-gray-reserv.png" alt="fixie">
       </div>
       <div class="col-6 col-sm-7 col-md-7 col-xl-8 description-section">
         <div class="description">
@@ -83,30 +91,96 @@
           <span class="code">#FG1209878YZS</span>
         </div>
         <div class="mt-3 w-50 copy-contain">
-          <button class="btn btn-green p-1">Copy booking code</button>
+          <button class="btn btn-blue p-1">Copy booking code</button>
         </div>
       </div>
     </div>
 
     <div class="rent-data">
+      <div class="d-flex flex-row align-items-center">
+        <div class="first-col">
+          <div class="border border-dark w-100 fw-bold">Quantity: 2 bikes</div>
+        </div>
+        <div class="second-col">
+          <div class="border border-dark w-100">
+            <span class="reservation-date fw-bold">Reservation Date: </span>
+            <span>Jan 18 - 20 2021</span></div>
+        </div>
+      </div>
 
+      <div class="d-flex flex-row">
+        <div class="first-col d-flex align-items-center">
+          <div class="border border-dark w-100  second-row order-details">
+            <table>
+              <thead>
+                <th class="fw-bold">Order details:</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 bike: Rp.78.000</td>
+                </tr>
+                <tr>
+                  <td>1 bike: Rp.78.000</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold pt-2">Total: 178.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="second-col">
+          <div class="border border-dark w-100  second-row identity">
+            <table>
+              <thead>
+                <th class="fw-bold">Identity:</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Samantha Doe(+6290987682)</td>
+                </tr>
+                <tr>
+                  <td>samanthadoe@mail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center g-0 mt-4">
+      <div class="col-5 col-sm-3">
+        <h2 class="fw-bold">Payment Code:</h2>
+      </div>
+      <div class="col-7 col-sm-4 code-section">
+        <div class="d-flex flex-row border justify-content-between align-items-center border-dark payment-code">
+          <span class="code">#FG1209878YZS</span>
+          <button class="btn btn-black btn-copy">Copy</button>
+        </div>
+      </div>
+      <div class="col-12 col-sm-auto">
+        <select class="form-select">
+          <option class="d-none">Select payment method</option>
+          <option>ATM</option>
+          <option>Gopay</option>
+        </select>
+      </div>
     </div>
 
     <div class="pay-now mt-5 px-2">
-      <a href="#" class="btn btn-green w-100 mt-3">Finish payment: <span class="text-danger time">59:30</span></a>
+      <a href="#" class="btn btn-blue w-100 mt-3">Finish payment: <span class="text-danger time">59:30</span></a>
     </div>
   </section>
-
-
 
   <footer class="bg-light pt-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <img src="./assets/images/home/logo.png" alt="logo">
+          <img src="./assets/images/home/Go-Rental x100.png" alt="logo">
           <p class="description">Plan and book your perfect trip with expert advice, travel tips for vehicle information
             from us</p>
-          <p>©2020 Vehicle Rental Center. All rights reserved</p>
+          <p>© 2022 GO Rental. All rights reserved</p>
         </div>
         <div class="col-lg-7">
           <div class="row">
@@ -155,5 +229,4 @@
     </div>
   </footer>
 </body>
-
 </html>
