@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <a href="https://imgbb.com/"><img src="https://i.ibb.co/CHdy4vd/Go-Rental-white.png" alt="Go-Rental-white" border="0" /></a>
+ <a href="https://imgbb.com/"><img src="https://i.ibb.co/8P4m5hB/Icon-Go-Rental.png" alt="Icon-Go-Rental" border="0"></a>
 </p>
 
 ---
@@ -26,8 +26,8 @@ npm install
 ```
 <br>
 
-#### Preview By Netlify
-<a href="https://ibb.co/SdB34qy"><img src="https://i.ibb.co/MG7CxqS/Screenshot-from-2022-02-28-15-26-04.png" alt="Screenshot-from-2022-02-28-15-26-04" border="0"></a>
+#### Preview Home By Netlify
+<a href="https://ibb.co/2gf5Lyj"><img src="https://i.ibb.co/t8W3N4b/Screenshot-from-2022-02-28-15-50-13.png" alt="Screenshot-from-2022-02-28-15-50-13" border="0"></a>
 
 ## ⛏️ Built Using
 
