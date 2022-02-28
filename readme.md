@@ -19,7 +19,7 @@ Follow the steps below
 git clone https://github.com/asherginting/fw5-responsive-website
 ```
 
-2. Install module & Import Database
+2. Install module
 
 ```
 npm install
